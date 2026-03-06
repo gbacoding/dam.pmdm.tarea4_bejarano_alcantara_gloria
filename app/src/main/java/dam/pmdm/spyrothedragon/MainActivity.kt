@@ -207,24 +207,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun pararMusicaFondo() {
-        musicPlayer?.let { if (it.isPlaying) it.stop(); it.release() }
+        musicPlayer?.let {
+            if (it.isPlaying) it.stop();
+            it.release()
+        }
         musicPlayer = null
     }
 
     private fun reproducirEfecto(resId: Int) {
-        try {
-            // Creamos el reproductor con el contexto de la actividad
-            val mp = MediaPlayer.create(this, resId)
-            mp?.let {
-                it.setVolume(1.0f, 1.0f)
-                it.setOnCompletionListener { player ->
-                    player.release()
+        Thread {
+            try {
+                val mp = MediaPlayer.create(this@MainActivity, resId)
+                mp?.apply {
+                    setVolume(1.0f, 1.0f)
+                    start()
+                    setOnCompletionListener {
+                        it.release()
+                    }
                 }
-                it.start()
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
-        } catch (e: Exception) {
-            android.util.Log.e("AUDIO_ERROR", "Error al reproducir el efecto: ${e.message}")
-        }
+        }.start() // Lo ejecutamos en un hilo aparte para que no lo bloquee la música
     }
 
     private fun reproducirVideo(sv: SurfaceView) {
