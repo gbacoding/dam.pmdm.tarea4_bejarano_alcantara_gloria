@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- NavHostFragment para manejar la navegación entre fragmentos -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/navHostFragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -17,7 +16,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph" />
 
-    <!-- BottomNavigationView para la navegación inferior -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navView"
         android:layout_width="0dp"
@@ -26,5 +24,70 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
+    <FrameLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:elevation="100dp"
+        android:visibility="gone">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <dam.pmdm.spyrothedragon.RiptoMagicView
+        android:id="@+id/riptoCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="999dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/guiaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="200dp"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/includeGuia"
+            layout="@layout/guia_pantalla1" />
+
+        <include
+            android:id="@+id/includeGuiaP2"
+            layout="@layout/guia_pantalla2" />
+
+        <include
+            android:id="@+id/includeGuiaP3"
+            layout="@layout/guia_pantalla3" />
+
+        <include
+            android:id="@+id/includeGuiaP4"
+            layout="@layout/guia_pantalla4" />
+
+        <include android:id="@+id/includeGuiaP5"
+            layout="@layout/guia_pantalla5" />
+
+        <include
+            android:id="@+id/includeGuiaP6"
+            layout="@layout/guia_pantalla6" />
+
+        <Button
+            android:id="@+id/btnOmitirGuiaGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="20dp"
+            android:text="Omitir"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutGuiaPantalla1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_guia_spyro"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guia_bienvenido"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_light"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guia_texto_1"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/spyro_imagen_pantalla1"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guia_texto_2"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guia_texto_3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_light"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guia_texto_4"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"/>
+
+            <SurfaceView
+                android:id="@+id/surfaceFire"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnComenzarGuia"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="@string/guia_comenzar"
+                android:textSize="18sp"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

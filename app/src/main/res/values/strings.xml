@@ -4,6 +4,52 @@
     <string name="characters">Personajes</string>
     <string name="collectibles">Coleccionables</string>
     <string name="title_about">Acerca de</string>
-    <string name="text_about">Aplicación desarrollada por \n <b>Lindsay Barrero Martínez.</b></string>
+    <string name="text_about">Aplicación desarrollada por \n <b>Gloria Bejarano Alcántara.</b></string>
     <string name="accept">Aceptar</string>
+
+    <!-- APARTADO A -->
+
+        <!-- PANTALLA 1. GUIA -->
+        <string name="guia_bienvenido">BIENVENIDO</string>
+
+        <string name="guia_texto_1">
+        Prepárate para explorar el mundo mágico de esta aplicación inspirada en Spyro.
+        </string>
+
+        <string name="guia_texto_2">
+        Aquí aprenderás a navegar por pestañas llenas de dragones, mundos fascinantes y montones de
+            tesoros brillantes.
+        </string>
+
+        <string name="guia_texto_3">¿Listo para empezar?</string>
+
+        <string name="guia_texto_4">
+            Pulsa "Comenzar" y deja que Spyro te guíe a través de esta experiencia interactiva.
+        </string>
+
+        <string name="guia_comenzar">Comenzar</string>
+
+        <!-- PANTALLA 2. GUIA -->
+        <string name="guia_p2_titulo">Pestaña Personajes</string>
+        <string name="guia_p2_descripcion">Aquí podrás explorar a todos los personajes del mundo de Spyro.</string>
+        <string name="guia_p2_boton">¡ENTENDIDO!</string>
+
+        <!-- PANTALLA 3. GUIA -->
+        <string name="guia_p3_descripcion">¡Explora los increíbles mundos y niveles que Spyro debe rescatar!</string>
+        <string name="guia_p3_boton">¡VALE!</string>
+        <string name="guia_p3_boton_sig">SIGUIENTE</string>
+
+        <!-- PANTALLA 4. GUIA -->
+        <string name="guia_p4_descripcion">¡Aquí verás todas las gemas y objetos que has recolectado en tu aventura!</string>
+        <string name="guia_p4_boton_final">¡ENTENDIDO!</string>
+
+        <!-- PANTALLA 5. GUIA -->
+        <string name="guia_p5_descripcion">¡Pulsa aquí si quieres saber más sobre los creadores de esta aventura!</string>
+        <string name="guia_p5_boton_final">¡ENTENDIDO!</string>
+
+        <!-- PANTALLA 6. GUIA -->
+        <string name="guia_p6_titulo">¡GUÍA COMPLETADA!</string>
+        <string name="guia_p6_resumen">Has aprendido a:\n\n• Gestionar tus personajes\n• Explorar nuevos mundos\n• Revisar tus coleccionables\n• Consultar información extra</string>
+        <string name="guia_p6_boton_inicio">¡COMENZAR AVENTURA!</string>
+
 </resources>

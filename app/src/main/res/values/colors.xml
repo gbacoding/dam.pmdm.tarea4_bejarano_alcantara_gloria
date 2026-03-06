@@ -7,4 +7,11 @@
     <color name="yellow2">#88ffffff</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+
+    <!-- PANTALLA 1. Morado claro para la guía. -->
+    <color name="purple_light">#B388FF</color>
+    <color name="spyro_purple_dark">#E64A148C</color>
+    <color name="spyro_purple_medium">#E66A1B9A</color>
+    <color name="spyro_purple_light">#E6311B92</color>
+
 </resources>

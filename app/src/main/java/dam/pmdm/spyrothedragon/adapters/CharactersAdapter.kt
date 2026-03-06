@@ -32,6 +32,9 @@ class CharactersAdapter(
 
         val drawableRes = characterImages[character.image] ?: R.drawable.placeholder
         holder.imageImageView.setImageResource(drawableRes)
+
+
+
     }
 
     override fun getItemCount(): Int = list.size
