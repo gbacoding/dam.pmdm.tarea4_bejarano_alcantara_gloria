@@ -213,10 +213,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun reproducirEfecto(resId: Int) {
         try {
+            // Creamos el reproductor con el contexto de la actividad
             val mp = MediaPlayer.create(this, resId)
-            mp?.setOnCompletionListener { it.release() }
-            mp?.start()
-        } catch (e: Exception) { e.printStackTrace() }
+            mp?.let {
+                it.setVolume(1.0f, 1.0f)
+                it.setOnCompletionListener { player ->
+                    player.release()
+                }
+                it.start()
+            }
+        } catch (e: Exception) {
+            android.util.Log.e("AUDIO_ERROR", "Error al reproducir el efecto: ${e.message}")
+        }
     }
 
     private fun reproducirVideo(sv: SurfaceView) {
